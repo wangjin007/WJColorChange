@@ -15,6 +15,9 @@
 		E25A358221379D12001C69C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E25A358121379D12001C69C5 /* main.m */; };
 		E25A358C21379D12001C69C5 /* ColorChangeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E25A358B21379D12001C69C5 /* ColorChangeTests.m */; };
 		E25A359721379D12001C69C5 /* ColorChangeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E25A359621379D12001C69C5 /* ColorChangeUITests.m */; };
+		E25A35A721379D35001C69C5 /* WJColorChange.m in Sources */ = {isa = PBXBuildFile; fileRef = E25A35A621379D35001C69C5 /* WJColorChange.m */; };
+		E25A35AA2137CF91001C69C5 /* WJCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E25A35A92137CF91001C69C5 /* WJCell.m */; };
+		E2BE11BD2137FB8700E97629 /* WJFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BE11BC2137FB8700E97629 /* WJFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		E25A359221379D12001C69C5 /* ColorChangeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorChangeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25A359621379D12001C69C5 /* ColorChangeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorChangeUITests.m; sourceTree = "<group>"; };
 		E25A359821379D12001C69C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E25A35A521379D35001C69C5 /* WJColorChange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJColorChange.h; sourceTree = "<group>"; };
+		E25A35A621379D35001C69C5 /* WJColorChange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJColorChange.m; sourceTree = "<group>"; };
+		E25A35A82137CF91001C69C5 /* WJCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJCell.h; sourceTree = "<group>"; };
+		E25A35A92137CF91001C69C5 /* WJCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJCell.m; sourceTree = "<group>"; };
+		E2BE11BB2137FB8700E97629 /* WJFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJFlowLayout.h; sourceTree = "<group>"; };
+		E2BE11BC2137FB8700E97629 /* WJFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +110,11 @@
 		E25A357121379D0F001C69C5 /* ColorChange */ = {
 			isa = PBXGroup;
 			children = (
+				E25A35A421379D1C001C69C5 /* ColorChangeTool */,
+				E2BE11BF2139244900E97629 /* View */,
+				E2BE11BE2139243500E97629 /* ViewController */,
 				E25A357221379D0F001C69C5 /* AppDelegate.h */,
 				E25A357321379D0F001C69C5 /* AppDelegate.m */,
-				E25A357521379D0F001C69C5 /* ViewController.h */,
-				E25A357621379D0F001C69C5 /* ViewController.m */,
 				E25A357821379D0F001C69C5 /* Main.storyboard */,
 				E25A357B21379D12001C69C5 /* Assets.xcassets */,
 				E25A357D21379D12001C69C5 /* LaunchScreen.storyboard */,
@@ -130,6 +140,35 @@
 				E25A359821379D12001C69C5 /* Info.plist */,
 			);
 			path = ColorChangeUITests;
+			sourceTree = "<group>";
+		};
+		E25A35A421379D1C001C69C5 /* ColorChangeTool */ = {
+			isa = PBXGroup;
+			children = (
+				E25A35A521379D35001C69C5 /* WJColorChange.h */,
+				E25A35A621379D35001C69C5 /* WJColorChange.m */,
+			);
+			path = ColorChangeTool;
+			sourceTree = "<group>";
+		};
+		E2BE11BE2139243500E97629 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E25A357521379D0F001C69C5 /* ViewController.h */,
+				E25A357621379D0F001C69C5 /* ViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E2BE11BF2139244900E97629 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2BE11BB2137FB8700E97629 /* WJFlowLayout.h */,
+				E2BE11BC2137FB8700E97629 /* WJFlowLayout.m */,
+				E25A35A82137CF91001C69C5 /* WJCell.h */,
+				E25A35A92137CF91001C69C5 /* WJCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +301,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2BE11BD2137FB8700E97629 /* WJFlowLayout.m in Sources */,
+				E25A35A721379D35001C69C5 /* WJColorChange.m in Sources */,
 				E25A357721379D0F001C69C5 /* ViewController.m in Sources */,
 				E25A358221379D12001C69C5 /* main.m in Sources */,
+				E25A35AA2137CF91001C69C5 /* WJCell.m in Sources */,
 				E25A357421379D0F001C69C5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +478,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 68X8D3GXRS;
 				INFOPLIST_FILE = ColorChange/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +496,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 68X8D3GXRS;
 				INFOPLIST_FILE = ColorChange/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

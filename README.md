@@ -18,7 +18,7 @@
     colorDataArr 存在并且数组里存放对象为 UIColor*/
     
      self.colorChange = [[WJColorChange alloc]init];
-     [self.colorChange settingScrollView:self.showCollectionView colorArray:self.colorDataArr     needChangeColorView:self.showCollectionView];
+     [self.colorChange settingScrollView:self.showCollectionView colorArray:self.colorDataArr needChangeColorView:self.showCollectionView];
 }
 
 ### 支持Cocoapods 

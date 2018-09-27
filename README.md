@@ -5,7 +5,7 @@
 
 ![image](https://github.com/wangjin007/WJColorChange/blob/master/changeColor.gif)
 ### 效果2 背景横向渐变色渐变
-![image](https://github.com/wangjin007/WJColorChange/blob/master/colorChange2.gif)
+![image](https://github.com/wangjin007/WJColorChange/blob/master/colorChange02.gif)
 
 ### 描述
 

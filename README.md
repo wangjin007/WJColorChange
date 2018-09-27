@@ -2,7 +2,7 @@
 ## 滑动颜色渐变
 
 ### 效果1 背景单色渐变
-
+![image](https://github.com/wangjin007/WJColorChange/blob/master/changeColor.gif)
 ### 效果2 背景横向渐变色渐变
 ![image](https://github.com/wangjin007/WJColorChange/blob/master/colorChange02.gif)
 

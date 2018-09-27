@@ -6,6 +6,8 @@
 //  Copyright © 2018年 ELah. All rights reserved.
 //
 
+// 增加了 横向渐变的效果
+
 #import "WJColorChange.h"
 
 @interface WJColorChange ()<UIScrollViewDelegate>
@@ -54,7 +56,6 @@
 @property (nonatomic,strong) UIView *needChangeView;
 //渐变图层
 @property (nonatomic,strong) CAGradientLayer *gradientLayer;
-
 
 @end
 

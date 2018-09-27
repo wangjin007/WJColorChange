@@ -8,6 +8,27 @@
 
 #import <UIKit/UIKit.h>
 
+
+@protocol WJColorChangeDelegate <NSObject>
+
+
+/**
+ 滚动时候回调 传出当前的滚动视图
+
+ @param scrollView 滚动视图
+ */
+- (void)WJColorScrollViewScroll:(UIScrollView *)scrollView;
+
+
+/**
+ 滚动结束时候回调
+
+ @param scrollView 滚动视图
+ */
+- (void)WJColorEndScroll:(UIScrollView *)scrollView;
+
+@end
+
 typedef enum : NSUInteger {
     SingleColor,//背景单色
     TransverseGradientColor, // 背景横向渐变色
@@ -48,5 +69,7 @@ typedef enum : NSUInteger {
  颜色类型
  */
 @property (nonatomic,assign) ColorType colorType;
+
+@property (nonatomic,assign) id<WJColorChangeDelegate> delegate;
 
 @end

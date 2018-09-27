@@ -127,6 +127,12 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
+    
+    if ([self.delegate respondsToSelector:@selector(WJColorScrollViewScroll:)]) {
+        
+        [self.delegate WJColorScrollViewScroll:scrollView];
+    }
+    
     // 1、定义获取需要的数据
     CGFloat progress = 0;
     NSInteger originalIndex = 0;
@@ -176,6 +182,13 @@
         [self changeTransverseViewGradientEffectWithProgress:progress bgView:self.needChangeView];
     }
 
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    
+    if ([self.delegate respondsToSelector:@selector(WJColorEndScroll:)]) {
+        [self.delegate WJColorEndScroll:scrollView];
+    }
 }
 
 #pragma mark - - - 颜色渐变方法抽取

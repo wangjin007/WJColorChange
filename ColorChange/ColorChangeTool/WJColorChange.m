@@ -6,7 +6,7 @@
 //  Copyright © 2018年 ELah. All rights reserved.
 //
 
-// 增加了 横向渐变的效果
+// 增加了 横向渐变的效果 添加了 类型设置
 
 #import "WJColorChange.h"
 
